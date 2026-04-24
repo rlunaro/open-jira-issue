@@ -1,0 +1,35 @@
+{
+  "appName": {
+    "message": "Abrir issue do Jira diretamente"
+  },
+  "appDescription": {
+    "message": "Abra URLs do Jira digitando apenas o número da issue"
+  },
+  "configTitle": {
+    "message": "Configurar URL"
+  },
+  "configSubtitleNoUrl": {
+    "message": "Parece que você ainda não configurou uma URL para abrir"
+  },
+  "configSubtitleHasUrl": {
+    "message": "Esta é a URL que você configurou para abrir"
+  },
+  "saveButton": {
+    "message": "Salvar"
+  },
+  "configHint": {
+    "message": "Lembre-se! Ctrl+Shift+Z abre esta extensão diretamente"
+  },
+  "enterNumberLabel": {
+    "message": "Digite o número e pressione Enter"
+  },
+  "openIssue": {
+    "message": "Abrir"
+  },
+  "openIssueHint": {
+    "message": "A issue será aberta diretamente em uma nova aba"
+  },
+  "openConfig": {
+    "message": "Editar a URL configurada"
+  }
+}

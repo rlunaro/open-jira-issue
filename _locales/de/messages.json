@@ -1,0 +1,35 @@
+{
+  "appName": {
+    "message": "Jira-Issue direkt öffnen"
+  },
+  "appDescription": {
+    "message": "Jira-URLs öffnen, indem Sie einfach die Issue-Nummer eingeben"
+  },
+  "configTitle": {
+    "message": "URL konfigurieren"
+  },
+  "configSubtitleNoUrl": {
+    "message": "Es scheint, dass keine URL zum Öffnen konfiguriert ist"
+  },
+  "configSubtitleHasUrl": {
+    "message": "Dies ist die URL, die Sie zum Öffnen konfiguriert haben"
+  },
+  "saveButton": {
+    "message": "Speichern"
+  },
+  "configHint": {
+    "message": "Hinweis: Mit Ctrl+Shift+Z öffnest du diese Erweiterung direkt"
+  },
+  "enterNumberLabel": {
+    "message": "Nummer eingeben und Enter drücken"
+  },
+  "openIssue": {
+    "message": "Öffnen"
+  },
+  "openIssueHint": {
+    "message": "Die Issue wird direkt in einem neuen Tab geöffnet"
+  },
+  "openConfig": {
+    "message": "Konfigurierte URL bearbeiten"
+  }
+}

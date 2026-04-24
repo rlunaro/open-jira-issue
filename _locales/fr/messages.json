@@ -1,0 +1,35 @@
+{
+  "appName": {
+    "message": "Ouvrir un ticket Jira directement"
+  },
+  "appDescription": {
+    "message": "Ouvrez des URL Jira simplement en saisissant le numéro de ticket"
+  },
+  "configTitle": {
+    "message": "Configurer l’URL"
+  },
+  "configSubtitleNoUrl": {
+    "message": "Il semble que vous n’ayez pas encore configuré d’URL à ouvrir"
+  },
+  "configSubtitleHasUrl": {
+    "message": "Voici l’URL que vous avez configurée pour ouvrir"
+  },
+  "saveButton": {
+    "message": "Enregistrer"
+  },
+  "configHint": {
+    "message": "Rappel : Ctrl+Shift+Z ouvre directement cette extension"
+  },
+  "enterNumberLabel": {
+    "message": "Saisissez le numéro et appuyez sur Entrée"
+  },
+  "openIssue": {
+    "message": "Ouvrir"
+  },
+  "openIssueHint": {
+    "message": "Le ticket s’ouvrira directement dans un nouvel onglet"
+  },
+  "openConfig": {
+    "message": "Modifier l’URL configurée"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="popupTitle">Abrir issue Jira</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 16px;
+      width: 320px;
+      font-family: Arial, sans-serif;
+      background: #f4f5f7;
+      color: #172b4d;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(9, 30, 66, 0.15);
+    }
+
+    .title {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0052cc;
+    }
+
+    .subtitle {
+      margin: 0 0 14px 0;
+      font-size: 13px;
+      color: #5e6c84;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: 1px solid #dfe1e6;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4c9aff;
+      box-shadow: 0 0 0 3px rgba(76, 154, 255, 0.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      background: #0052cc;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #0747a6;
+    }
+
+    .hint {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #6b778c;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="setUrl">
+    <h1 class="title" data-i18n="configTitle">Configurar URL</h1>
+    <p class="subtitle" data-i18n="configSubtitleNoUrl" id="configSubtitleNoUrl">Parece que no has configurado una url para abrir</p>
+    <p class="subtitle" data-i18n="configSubtitleHasUrl" id="configSubtitleHasUrl" style="display:none">Esta es la url que tienes configurada para abrir</p>
+
+    <div class="row">
+      <input id="url" 
+        type="text" 
+        placeholder="https://example.atlassian.net/browse/XXX-"/>
+      <button id="saveUrl" data-i18n="saveButton">Guardar</button>
+    </div>
+
+    <div class="hint" data-i18n="configHint">Recuerda! Ctrl+Shif+Z abre directamente esta extensión</div>
+  </div>
+
+
+  <div class="card" id="openIssue" style="display:none">
+    <h1 class="title" data-i18n="openJiraIssue">Abrir issue Jira</h1>
+    <p class="subtitle" data-i18n="enterNumberLabel">Introduce el número y pulsa Enter</p>
+
+    <div class="row">
+      <input id="issue" type="text" placeholder="Ejemplo: 12345" autofocus />
+      <button id="go" data-i18n="openIssue">Abrir</button>
+    </div>
+
+    <div class="hint" data-i18n="openIssueHint">Se abrirá directamente la issue en una nueva pestaña</div>
+    <div class="hint"><a href="#" id="openConfig" data-i18n="openConfig">Editar la url configurada</a></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
